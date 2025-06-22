@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="style.css">
+
+ 
+</head>
+
+<body>
+  <h1>家計簿  </h1>
+  <div class="button-group">
+    <button id="syokuhi">食費</button>
+    <button id="kotei">固定費</button>
+    <button id="mizunetu">水道光熱費</button>
+    <button id="nitiyouhinn">日用品費</button>
+    <button id="gaisyoku">外食費</button>
+    <button id="docter">医療費</button>
+    <button id="kyouiku">教育費</button>
+    <button id="special">特別費</button>
+    <button id="cureka">クレジットカード</button>
+  </div>
+<form id="transaction-form">
+    <input type="text" id="description" placeholder="内容" required><br>
+    <input type="number" id="amount" placeholder="金額 " pattern="\d*" required><br>
+    <button type="submit">追加</button>
+  </form>
+<br>
+
+  </form>
+  <div>--------------------------</div>
+ <h2>取引履歴</h2>
+  <ul id="transaction-list"></ul>
+  <h2>合計: <span id="total">0</span>円</h2>
+  
+ <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
